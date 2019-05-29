@@ -1,0 +1,37 @@
+<html>
+    <head>Convert Numbers in numbers romans</head>
+    <body>
+
+        <script>
+                
+                const romansNumbers = [
+                    {id:1, value:"I"},
+                    {id:2, value:"II"},
+                    {id:3, value:"III"},
+                    {id:4, value:"IV"},
+                    {id:5, value:"V"},
+                    {id:6, value:"VI"},
+                    {id:7, value:"VII"},
+                    {id:8, value:"VIII"}, 
+                    {id:9, value:"IX"},
+                    {id:10, value:"X"}
+                ];
+
+                const numbersInserts = parseInt(prompt());
+               
+                const mapped = romansNumbers.map(i => {
+                    const result = i.id === numbersInserts? i.value : false;
+
+                    return {
+                       result
+                    }
+                })
+
+                const filter = mapped.filter(i => i !==false);
+
+                console.log(filter);
+
+
+        </script>
+    </body>
+</html>
