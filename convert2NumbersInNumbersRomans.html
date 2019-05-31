@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        Convert number in number romans 
+
+        <script>
+
+                var showNewNumber = false;
+
+                //simplemente debemos alimentar nuestra variable numbers con la cantidad de numero que necesitamos
+    
+                const numbers = [
+                    {id:1, value:"I"},
+                    {id:2, value: "II"},
+                    {id:3, value: "III"},
+                    {id:4, value: "IV"},
+                    {id:5, value: "V"},
+                    {id:6, value: "VI"},
+                    {id:7, value: "VII"},
+                    {id:8, value: "VIII"},
+                    {id:9, value: "IX"},
+                    {id:10, value: "X"},
+                    {id:11, value: "XI"},
+                    {id:12, value: "XII"},
+                    {id:13, value: "XIII"},
+                    {id:14, value: "XIV"},
+                    {id:15, value: "XV"},
+                    {id:16, value: "XVI"},
+                    {id:17, value: "XVII"},
+                    {id:18, value: "XVIII"},
+                    {id:19, value: "XIX"},
+                    {id:20, value: "XX"},
+                    {id:21, value: "XXI"},
+                    {id:22, value: "XXII"},
+                    {id:23, value: "XXIII"},
+                    {id:24, value: "XXIV"},
+                    {id:25, value: "XXV"},
+                ];
+    
+               
+                const newNumbers = parseInt(prompt());
+    
+                // validamos que el numero ingresado puede ser comparado con uno de los numeros de nuestro array
+    
+                const validation = numbers.find(i => i.id === newNumbers);
+    
+                showNewNumber = validation.value;
+
+                const valid = showNewNumber ? showNewNumber : "ESTE NUMERO NO ESTA DISPONIBLE"
+
+                alert(valid)
+
+
+              console.log(showNewNumber)
+            </script>
+    </head>
+    <body>
+    </body>
+</html>
